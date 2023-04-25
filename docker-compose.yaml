@@ -1,0 +1,10 @@
+version: '2'
+services:
+  dockergame:
+    build:
+      context: "."
+    image: "myuser/dockergame:latest"
+    environment:
+      THEME: "1"
+    ports:
+      - "8090:80"
